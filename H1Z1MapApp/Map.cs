@@ -49,7 +49,7 @@ namespace H1Z1MapApp
                 PinNames[i] = "Pin " + (i + 1);
                 pin[i] = new Point();
                 pinrecs[i] = new System.Drawing.Rectangle(((int)Math.Round(pin[i].X * maganfication) + DisplayZShift) - 3, ((int)Math.Round(pin[i].Y * maganfication * -1) + DisplayXShift) - 3, 6, 6);
-                switch (i % 5)
+                switch (i % 10)
                 {
                     case 0:
                         colours[i] = new System.Drawing.SolidBrush(System.Drawing.Color.LightGreen);
@@ -65,6 +65,21 @@ namespace H1Z1MapApp
                         break;
                     case 4:
                         colours[i] = new System.Drawing.SolidBrush(System.Drawing.Color.LightSkyBlue);
+                        break;
+                    case 5:
+                        colours[i] = new System.Drawing.SolidBrush(System.Drawing.Color.LightGray);
+                        break;
+                    case 6:
+                        colours[i] = new System.Drawing.SolidBrush(System.Drawing.Color.LightBlue);
+                        break;
+                    case 7:
+                        colours[i] = new System.Drawing.SolidBrush(System.Drawing.Color.Firebrick);
+                        break;
+                    case 8:
+                        colours[i] = new System.Drawing.SolidBrush(System.Drawing.Color.Beige);
+                        break;
+                    case 9:
+                        colours[i] = new System.Drawing.SolidBrush(System.Drawing.Color.Aqua);
                         break;
                 }
             }
